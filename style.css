@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'mini_pixel_7';
+    src: url(fonts/mini_pixel-7.ttf) format('truetype'),
+    url(fonts/mini_pixel-7-webfont.woff) format('woff'),
+    url(fonts/mini_pixel-7-webfont.woff2) format('woff2')
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    transition: all .5s;
+    overflow: hidden;
+    background-image: url(https://i.imgur.com/nLuzyK8.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 60px;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+.btn, input{
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    height: 35px;
+    padding: 0 1em;
+}
+.download, input{
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    height: 35px;
+    padding: 0 1em;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+.download:hover{
+    background-color: green;
+    color: white;
+}
+.container{
+    background-image: url(https://i.imgur.com/sa3abIv.png);
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    gap: 0px;
+}
+.pixel{  
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.blocks{
+    background-color: rgb(0, 0, 0, 0.5);
+    display: inline-block;
+    position: absolute;
+    width: 270px;
+    height: 1000px;
+    left: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.backgrounds{
+    background-color: rgb(0, 0, 0, 0.5);
+    display: inline-block;
+    position: absolute;
+    width: 270px;
+    height: 600px;
+    top: 200px;
+    right: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.block{
+    cursor: pointer;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(46, 219, 219, 0.2);
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.background{
+    cursor: pointer;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(46, 219, 219, 0.2);
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.block:hover{
+    background-color: rgba(46, 219, 219, 0.068);
+}
+.background:hover{
+    background-color: rgba(46, 219, 219, 0.068);
+}
+.block > img{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+.background img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+.delete{
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 60px;
+    background-color: grey;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    border-radius: 5px;
+}
+.welcome{
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    display: flex;
+    height: 960px;
+    width: 960px;
+    background-image: url(https://i.imgur.com/C6iu4vU.png);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.close{
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    position: absolute;
+    display: flex;
+    bottom: 80px;
+    width: 640px;
+    height: 160px;
+    background-image: url(https://i.imgur.com/AYFZNT1.png);
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.welcometitle{
+    position: absolute;
+    display: flex;
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 150px;
+    bottom: 670px;
+}
+.welcometext{
+    position: relative;
+    display: flex;
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+}
+li{
+    list-style-type: none;
+}
