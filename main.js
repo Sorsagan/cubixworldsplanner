@@ -44,7 +44,8 @@ function populate(size) {
   }
 }
 
-window.addEventListener('mousedown', function(){
+window.addEventListener('mousedown', function(event){
+  event.preventDefault()
   draw = true;
 });
 
