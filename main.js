@@ -62,7 +62,7 @@ resetBtn.addEventListener('click', reset);
 populate(100);
 
 let zoomActivate = false;
-container.addEventListener('mousewheel', (e) => {
+container.addEventListener('wheel', (e) => {
   var y = e.deltaY
   if(y < 0){
     zoomActivate = true;
@@ -72,7 +72,7 @@ container.addEventListener('mousewheel', (e) => {
   }
   });
 
-container.addEventListener('mousewheel', (e) => {
+container.addEventListener('wheel', (e) => {
   const { clientX: x, clientY: y } = e;
   if (zoomActivate) {
     body.style.transform = 'scale(2.5)';
