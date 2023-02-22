@@ -214,13 +214,19 @@ body{
     font-size: 150px;
     position: absolute;
     display: flex;
-    bottom: 80px;
-    width: 640px;
+    bottom: 150px;
+    width: 480px;
     height: 160px;
-    background-image: url(https://i.imgur.com/AYFZNT1.png);
-    border-width: 0;
-    background-color: transparent;
+    background-color: rgb(135, 135, 135, 0.7);
     cursor: pointer;
+    border-radius: 15px;
+    padding: 0 1em;
+    transition-duration: 0.7s;
+    border: 0px;
+}
+.close:hover{
+    background-color: rgba(0, 128, 0, 0.5);
+    color: white;
 }
 .welcometitle{
     position: absolute;
