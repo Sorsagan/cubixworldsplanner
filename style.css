@@ -26,8 +26,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
-    height: 60px;
+    width: 15dvw;
+    height: 4dvw;
     background-color: grey;
     position: absolute;
     top: 0;
@@ -38,7 +38,7 @@ body{
     font-family: 'mini_pixel_7', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: rgb(0, 0, 0);
     padding: 16px 32px;
     text-align: center;
@@ -49,14 +49,14 @@ body{
     cursor: pointer;
     background-color: white;
     border: 2px solid black;
-    height: 35px;
+    height: 3.8dvh;
     padding: 0 1em;
 }
 .download, input{
     font-family: 'mini_pixel_7', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: rgb(0, 0, 0);
     padding: 16px 32px;
     text-align: center;
@@ -67,7 +67,7 @@ body{
     cursor: pointer;
     background-color: white;
     border: 2px solid black;
-    height: 35px;
+    height: 3.8dvh;
     padding: 0 1em;
 }
 .btn:hover{
@@ -112,7 +112,7 @@ body{
     overflow-x: hidden;
 }
 .blocks::-webkit-scrollbar {
-    width: 1em;
+    width: 0.5em;
     border-radius: 30px;
   }
 .blocks::-webkit-scrollbar-track {
@@ -182,15 +182,31 @@ body{
     font-family: 'mini_pixel_7', Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 20px;
+    font-size: 3vb;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
-    height: 60px;
+    width: 15dvw;
+    height: 3dvw;
     background-color: grey;
     position: absolute;
     top: 70px;
+    right: 0;
+    border-radius: 5px;
+}
+.zoom{
+    font-family: 'mini_pixel_7', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3vb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15dvw;
+    height: 3dvw;
+    background-color: grey;
+    position: absolute;
+    top: 120px;
     right: 0;
     border-radius: 5px;
 }
@@ -229,6 +245,8 @@ body{
     color: white;
 }
 .welcometitle{
+    justify-content: center;
+    align-items: center;
     position: absolute;
     display: flex;
     font-family: 'mini_pixel_7', Arial, sans-serif;
@@ -238,6 +256,8 @@ body{
     bottom: 670px;
 }
 .welcometext{
+    justify-content: center;
+    align-items: center;
     position: relative;
     display: flex;
     font-family: 'mini_pixel_7', Arial, sans-serif;
